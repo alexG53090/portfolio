@@ -4,14 +4,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.my-slick-slider').slick({
-      autoplay: true,
+      autoplay: false,
       dots: false,
       arrows: false,
       swipe: true,
       swipeToSlide: true,
       touchMove: true,
-
-
 
       // the magic
       responsive: [{
