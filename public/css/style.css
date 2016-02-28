@@ -1,0 +1,30 @@
+body {
+  background-color: white;
+  color:black;
+}
+
+header {
+  height: 30vh;
+  background-color: white;
+  padding: none;
+  margin-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: transparent;
+  color:black;
+}
+
+li a {
+  background-color: transparent;
+  color:black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: black;
+}
