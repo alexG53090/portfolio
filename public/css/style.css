@@ -1,30 +1,50 @@
-body {
-  background-color: white;
+body { background-color: white; color:black; }
+
+.navbar { background-color: transparent;
   color:black;
 }
 
-header {
-  height: 30vh;
-  background-color: white;
-  padding: none;
-  margin-top: 0;
-}
+li a { background-color: transparent; color:black; }
 
-.navbar {
-  margin-bottom: 0px;
-  background-color: transparent;
-  color:black;
-}
-
-li a {
-  background-color: transparent;
-  color:black;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color:black;
-}
+.navbar-default .navbar-nav>li>a { color:black; }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: black;
+}
+
+.my-slick-slider {
+  height: 500px;
+  width: 90%;
+  margin:auto;
+}
+
+.my-slick-slider .project p {
+  padding: 2em;
+  font-size: 1.25em;
+}
+
+.my-slick-slider .project p::first-letter {
+  font-size: 1.5em;
+  margin-left: 5%;
+}
+
+header {
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.header-container {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  text-align: center;
 }
