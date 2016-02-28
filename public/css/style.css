@@ -13,13 +13,19 @@ li a { background-color: transparent; color:black; }
 }
 
 .my-slick-slider {
-  height: 500px;
+  height: 100%;
   width: 90%;
   margin:auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.my-slick-slider img {
+  margin: auto;
 }
 
 .my-slick-slider .project p {
-  padding: 2em;
+
   font-size: 1.25em;
 }
 
@@ -29,7 +35,7 @@ li a { background-color: transparent; color:black; }
 }
 
 header {
-  height: 40vh;
+  height: 30vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +44,7 @@ header {
 }
 
 .header-container {
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -47,4 +53,29 @@ header {
 
 main {
   text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.project-description {
+  color:white;
+  background-color: black;
+  font-weight: 400;
+  z-index: 99;
+  padding: 1em;
+  font-size: .75em;
+  opacity: .7
+}
+
+.call-to-swipe {
+  color:#ccc;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+  color: red;
+  border-color: #ccc;
 }

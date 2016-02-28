@@ -16,7 +16,7 @@ $(document).ready(function(){
 
           breakpoint: 2000,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
             infinite: true
           }
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
             breakpoint: 1500,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               infinite: true
             }
 
