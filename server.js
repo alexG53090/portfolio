@@ -18,6 +18,10 @@ app.get('/portfolio', function(req, res) {
 	res.render('portfolio');
 });
 
+app.get('/flybuy', function(req, res) {
+	res.render('flybuy');
+});
+
 app.listen(port, function() {
 	console.log('Our app is running on http://localhost:' + port);
 });

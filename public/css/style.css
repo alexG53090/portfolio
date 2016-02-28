@@ -31,24 +31,17 @@ li a { background-color: transparent; color:black; }
 
 .my-slick-slider .project p::first-letter {
   font-size: 1.5em;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 header {
-  height: 30vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+text-align: center;
 
 }
 
 .header-container {
-  margin-top: 2%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 75px;
+
 }
 
 main {
@@ -60,8 +53,8 @@ img {
 }
 
 .project-description {
-  color:white;
-  background-color: black;
+  color:#424242;
+  background-color: #f7f7f7;
   font-weight: 400;
   z-index: 99;
   padding: 1em;
@@ -77,5 +70,6 @@ hr {
   width: 90%;
   margin: auto;
   color: red;
-  border-color: #ccc;
+  border-color: #f7f7f7;
+  margin: 5%;
 }
