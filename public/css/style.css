@@ -71,5 +71,26 @@ hr {
   margin: auto;
   color: red;
   border-color: #f7f7f7;
-  margin: 5%;
+  margin: 3%;
+}
+
+.contact {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+.slick-track a{
+  color:#424242;
+
+}
+
+svg {
+  height: 10%;
+  width: 10%;
+  margin: 2%;
+}
+
+.replay {
+  color: #ccc;
 }
