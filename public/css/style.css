@@ -61,10 +61,10 @@ img {
   text-align: center;
   color:#424242;
   background-color: #f7f7f7;
-  font-weight: 400;
+  font-weight: lighter;;
   z-index: 99;
   padding: 1em;
-  font-size: .75em;
+  font-size: 1.1em;
   opacity: .7;
   height:200px;
 }
