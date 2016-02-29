@@ -1,3 +1,9 @@
+var config = {
+    consumer_key: 'ZaPtUltCzS9nUFuSwrQYP0iQM',
+    consumer_secret: 'bkeFdOq18cpYCrtigKOrajuURqHsVYRKr6y6S2ve22rronNypt'
+};
+
+// module.exports = config;
 
 $(document).ready(function(){
   $('.triangle').hide();
@@ -56,11 +62,6 @@ function replay(){
     });
   });
 }
-
-
-$(body).scroll(function(){
-
-})
 
 function playSlides(){
   $('.my-slick-slider').slick({

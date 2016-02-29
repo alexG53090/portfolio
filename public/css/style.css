@@ -76,9 +76,27 @@ hr {
 
 .contact {
   text-align: center;
+  background-color: #f7f7f7;
+  width: 90%;
+  margin: auto;
+  padding: 3%;
 }
+.contact-subhead {
+  color: #ccc;
+}
+
 footer {
   text-align: center;
+  height: 500px;
+  background-color: #f7f7f7;
+  width: 90%;
+  margin: auto;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .slick-track a{
   color:#424242;
@@ -98,11 +116,42 @@ svg {
 .icons {
   display: flex;
   flex-direction: row;
+  width: 90%;
+  height: 100%;
+  background-color: #f7f7f7;
+  margin: auto;
   align-items: center;
+  padding: 5%;
 }
 
 .icon {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin: auto;
+  width: 10%;
+  text-align: center;
+}
+
+.icons .icon p {
+  text-align: center;
+}
+
+.about-section {
+  text-align: center;
+}
+
+.fa {
+  font-size: 4em;
+  color:#ccc;
+  margin-bottom: 20px;
+}
+
+.fa-github:hover { color: green;}
+.fa-stack-overflow:hover { color: orange;}
+.fa-twitter:hover { color: cornflowerblue;}
+.fa-code:hover { color: red;}
+.fa-linkedin:hover { color: blue;}
+.fa-codepen:hover { color: black;}
+
+
+p {
+  font-size: 1.5em;
 }
