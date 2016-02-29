@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('.triangle').hide();
   $('.square').hide();
@@ -28,21 +27,32 @@ function replay(){
     $('.square').fadeIn('slow', function(){
       $('.circle').fadeIn('slow', function(){
         $('.triangle').fadeIn('slow', function(){
+
           $('.about').fadeIn('slow', function(){
+
             $('.portfolio-link').css( "color", "white" );
             $('.portfolio-link').css( "background-color", "black" );
-            $(this).fadeOut(1500, function(){
-              $('.portfolio-link').css( "background-color", "white" );
-              $('.portfolio-link').css( "color", "black" );
+
+            $(this).fadeOut(100, function(){
+
               $('.about-link').css( "color", "white" );
               $('.about-link').css( "background-color", "black" );
+
+              $('.portfolio-link').css( "background-color", "white" );
+              $('.portfolio-link').css( "color", "black" );
+
               $('.know').fadeIn(1500, function(){
+
+                $('.contact-link').css( "background-color", "black" );
+                $('.contact-link').css( "color", "white" );
+
                 $('.about-link').css( "background-color", "white" );
                 $('.about-link').css( "color", "black" );
-                $(this).fadeOut(1500, function(){
-                  $('.contact-link').css( "background-color", "black" );
-                  $('.contact-link').css( "color", "white" );
-                  $('.touch').fadeIn(1500, function(){
+
+
+                $(this).fadeOut(100, function(){
+
+                  $('.touch').fadeIn(500, function(){
                     $('.contact-link').css( "background-color", "white" );
                     $('.contact-link').css( "color", "black" );
                     $('.replay').fadeIn('slow');
