@@ -2,6 +2,7 @@ body { background-color: white; color:black; }
 
 .navbar { background-color: transparent;
   color:black;
+  font-size: 1.25em;
 }
 
 li a { background-color: transparent; color:black; }
@@ -154,4 +155,17 @@ svg {
 
 p {
   font-size: 1.5em;
+  text-align: center;
+}
+.colophon {
+  font-size: 1em;
+  font-weight: 500;
+  color:#ccc;
+  margin: 2%;
+}
+
+h2 {
+font-family: 'Oswald', sans-serif;
+letter-spacing: 2 px;
+
 }
