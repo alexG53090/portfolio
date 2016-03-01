@@ -34,23 +34,18 @@ function replay(){
     $('.square').fadeIn('slow', function(){
       $('.circle').fadeIn('slow', function(){
         $('.triangle').fadeIn('slow', function(){
+          $('.portfolio-link').css( "text-decoration", "underline" );
           $('.about').fadeIn('slow', function(){
-            $('.portfolio-link').css( "color", "white" );
-            $('.portfolio-link').css( "background-color", "black" );
-            $(this).fadeOut(1500, function(){
-              $('.portfolio-link').css( "background-color", "white" );
-              $('.portfolio-link').css( "color", "black" );
-              $('.about-link').css( "color", "white" );
-              $('.about-link').css( "background-color", "black" );
-              $('.know').fadeIn(1500, function(){
-                $('.about-link').css( "background-color", "white" );
-                $('.about-link').css( "color", "black" );
-                $(this).fadeOut(500, function(){
-                  $('.contact-link').css( "background-color", "black" );
-                  $('.contact-link').css( "color", "white" );
-                  $('.touch').fadeIn(1500, function(){
-                    $('.contact-link').css( "background-color", "white" );
-                    $('.contact-link').css( "color", "black" );
+            $(this).fadeOut(1150, function(){
+              $('.portfolio-link').css( "text-decoration", "none" );
+              $('.about-link').css( "text-decoration", "underline" );
+                $('.know').fadeIn(1150, function(){
+                  $('.about-link').css( "text-decoration", "none" );
+                    $(this).fadeOut(1000, function(){
+                    $('.contact-link').css( "text-decoration", "underline" );
+                    $('.touch').fadeIn(1150, function(){
+                      $('.touch').fadeOut(1150);
+                    $('.contact-link').css( "text-decoration", "none");
                     $('.replay').fadeIn('slow');
                   });
                 });
@@ -70,8 +65,12 @@ function playSlides(){
     swipe: true,
     swipeToSlide: true,
     touchMove: true,
-    dots: true,
-    arrows:false,
+    // dots: true,
+    arrows:true,
+    appendArrows: $(".projectos"),
+    asNavFor: null,
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-angle-left"></i></button>',
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-angle-right"></i></button>',
     // the magic
     responsive: [{
         breakpoint: 2000,

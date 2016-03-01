@@ -59,14 +59,18 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color:#424242;
-  background-color: #f7f7f7;
+  color:black;
+  background-color: transparent;
   font-weight: lighter;;
   z-index: 99;
   padding: 1em;
   font-size: 1.1em;
   opacity: .7;
-  height:200px;
+  height:100%;
+  box-sizing: border-box;
+  border: 1px solid #f7f7f7;
+  border-top: none;
+  font-style:italic;
 }
 
 .call-to-swipe {
@@ -210,4 +214,36 @@ letter-spacing: 2 px;
 .slider-container {
   width: 90%;
   margin: auto;
+}
+
+.slick-prev {
+  border:none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.slick-next {
+  border:none;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+.fa-angle-left {
+  font-size: 1.3em;
+  color: black;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.fa-angle-right {
+  font-size: 1.3em;
+  color: black;
+    margin-left: 50px;
+}
+
+.fa-angle-left:hover {
+  color:red;
 }
