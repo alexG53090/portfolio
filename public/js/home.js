@@ -1,11 +1,5 @@
-var config = {
-    consumer_key: 'ZaPtUltCzS9nUFuSwrQYP0iQM',
-    consumer_secret: 'bkeFdOq18cpYCrtigKOrajuURqHsVYRKr6y6S2ve22rronNypt'
-};
-
-// module.exports = config;
-
 $(document).ready(function(){
+  getQuote()
   $('.triangle').hide();
   $('.square').hide();
   $('.circle').hide();
@@ -19,6 +13,7 @@ $(document).ready(function(){
     replay();
   })
   playSlides();
+  getQuote();
 })
 
 function replay(){
@@ -46,7 +41,6 @@ function replay(){
                     $('.touch').fadeIn(1150, function(){
                       $('.touch').fadeOut(1150);
                     $('.contact-link').css( "text-decoration", "none");
-                    $('.replay').fadeIn('slow');
                   });
                 });
               });
@@ -57,7 +51,6 @@ function replay(){
     });
   });
 }
-
 
 function playSlides(){
   $('.slickslide').slick({
@@ -97,5 +90,29 @@ function playSlides(){
         breakpoint: 300,
         settings: "unslick" // destroys slick
       }]
+  });
+}
+
+function getQuote(){
+  var quotes = [];
+  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40&callback=", function(a) {
+    for (var obj of a) {
+      var quote = {}
+      quote.author = obj.title;
+      quote.quote = obj.content;
+      quote.url = obj.link;
+      quotes.push(quote);
+    }
+  }).then(function(quote){
+    var randNum = Math.floor(Math.random() * 39);
+    var q = quotes[randNum];
+    $("#quote").empty();
+    $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
+    $("#new-quote").click(function() {
+      var randNum = Math.floor(Math.random() * 39);
+      var q = quotes[randNum];
+      $("#quote").empty();
+      $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
+    });
   });
 }
