@@ -95,7 +95,7 @@ function playSlides(){
 
 function getQuote(){
   var quotes = [];
-  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40&callback=my_function?ssl=true", function(a) {
+  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
     for (var obj of a) {
       var quote = {}
       quote.author = obj.title;
