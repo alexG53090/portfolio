@@ -83,8 +83,9 @@ function replay(){
                     $(this).fadeOut(1000, function(){
                     $('.contact-link').css( "text-decoration", "underline" );
                     $('.touch').fadeIn(1150, function(){
-                      $('.replay').fadeIn(1150);
+                    $('.replay').fadeIn(1150);
                     $('.contact-link').css( "text-decoration", "none");
+                    $('.fa-angle').css('color', 'red');
                   });
                 });
               });

@@ -82,7 +82,8 @@ hr {
   margin: auto;
   color: red;
   border-color: #f7f7f7;
-  margin: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .contact {
@@ -248,10 +249,27 @@ letter-spacing: 2 px;
   color:red;
 }
 
+.arrows {
+  color:blue;
+}
 
+.hire-me-please {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.see {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
-
+.hire-me-wrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin:10%;
+}
 
 
 /*  ANimate ****************************/
