@@ -9,6 +9,16 @@ $('.replay').on('click', function(){
   replay();
 })
 
+$('.pause').on('click', function() {
+    $('.slickslide')
+        .slick('slickPause')
+});
+
+$('.play').on('click', function() {
+    $('.slickslide')
+        .slick('slickPlay')
+});
+
 function hideElements(){
   $('.triangle').hide();
   $('.square').hide();

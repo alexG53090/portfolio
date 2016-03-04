@@ -3,6 +3,7 @@
   module.exports = {
     development: {
       client: 'pg',
+      // connection: 'postgres://localhost/portfolio'
       connection: 'postgres://yetpmeohcsomtg:Hnx270n32fWXXOYKScGvbTRt_i@ec2-54-221-201-165.compute-1.amazonaws.com:5432/d30t2g1brgvttb?ssl=true'
     }
 

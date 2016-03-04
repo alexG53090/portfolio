@@ -59,6 +59,8 @@ _______________________________________________________________________
 		<p class="call-to-swipe">Swipe or Click on arrows</p>
 		<div class="arrows"></div>
 		<% include ./partials/projects %>
+		<button class="pause">Pause</button>
+		<button class="play">Play</button>
 	</main>
 	<hr>
 	<div class="about-section">
@@ -88,7 +90,13 @@ _______________________________________________________________________
 			<h2 class='see'>LIKE WHAT YOU SEE?</h2>
 			<h3 class=resume-title>Here's my resume</h3>
 			<a class='resume' href="./ab_resume.pdf">Resume.pdf</a>
-			<% include ./partials/messageform %>
+			<!-- <% include ./partials/messageform %> -->
+			<form action='/sendmessage' method="POST">
+			  <input type="text" name="name" placeholder="Your name here">
+			  <input type="text" name="message" placeholder="Your message here">
+			  <input type="submit" value="Sumbit">
+			</form>
+
 		</div>
 	</div>
 	<hr>
