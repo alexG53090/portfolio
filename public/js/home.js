@@ -22,7 +22,7 @@ function hideElements(){
 
 function playSlides(){
   $('.slickslide').slick({
-    autoplay: true,
+    autoplay: false,
     swipe: true,
     swipeToSlide: true,
     touchMove: true,
