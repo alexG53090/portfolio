@@ -12,7 +12,7 @@ function animateIn(){
         itemsToAnimate.forEach(function(index) {
             var objectBottom = $(index).offset().top + $(index).outerHeight();
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-            if (objectBottom < windowBottom - 200) { //object comes into view (scrolling down)
+            if (objectBottom < windowBottom - 100) { //object comes into view (scrolling down)
                 if ($(index).css('opacity')==0) {
                   $(index).fadeTo(1000,1);
                 }
