@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 8080;
+var knex = require('./db/knex');
+var bodyParser = require('body-parser');
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
