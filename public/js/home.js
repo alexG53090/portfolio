@@ -1,25 +1,80 @@
+$(document).ready(function(){
+  hideElements();
+  playSlides();
+  animateIn();
+  replay();
+  $('.replay').on('click', function(){
+    replay();
+  })
+})
+
+function hideElements(){
+  $('.triangle').hide();
+  $('.square').hide();
+  $('.circle').hide();
+  $('.about').hide();
+  $('.greeting').hide();
+  $('.know').hide();
+  $('.touch').hide();
+  $('.replay').hide();
+}
+
+function playSlides(){
+  $('.slickslide').slick({
+    autoplay: true,
+    swipe: true,
+    swipeToSlide: true,
+    touchMove: true,
+    arrows:true,
+    appendArrows: $(".projectos"),
+    asNavFor: null,
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-angle-left"></i></button>',
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-angle-right"></i></button>',
+    responsive: [{
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 1,
+          infinite: true
+        }
+      },
+      {
+          breakpoint: 1500,
+          settings: {
+            slidesToShow: 1,
+            infinite: true
+          }
+        },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: false
+        }
+      },
+       {
+        breakpoint: 300,
+        settings: "unslick"
+      }]
+  });
+}
+
 function animateIn(){
   $(window).on("load",function() {
       function fade() {
-        var me = $('.me');
-        var icons = $('.icons');
-        var colophon = $('.colophon')
-        var see = $('.see')
-        var resumeTitle = $('.resume-title')
-        var resume = $('.resume')
         var itemsToAnimate = [];
+        var me = $('.me'), icons = $('.icons'), colophon = $('.colophon'), see = $('.see'), resumeTitle = $('.resume-title'), resume = $('.resume');
         itemsToAnimate.push(me, icons, see, resumeTitle, resume);
         itemsToAnimate.forEach(function(index) {
             var objectBottom = $(index).offset().top + $(index).outerHeight();
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
             if (objectBottom < windowBottom - 100) { //object comes into view (scrolling down)
-                if ($(index).css('opacity')==0) {
-                  $(index).fadeTo(1000,1);
-                }
+              if ($(index).css('opacity')==0) {
+                $(index).fadeTo(1000,1);
+              }
             } else {
-                if ($(index).css('opacity')==1) {
-                  $(index).fadeTo(1000,0);
-                }
+              if ($(index).css('opacity')==1) {
+                $(index).fadeTo(1000,0);
+              }
             }
         });
       }
@@ -42,23 +97,6 @@ $(function() {
     }
   });
 });
-
-$(document).ready(function(){
-  $('.triangle').hide();
-  $('.square').hide();
-  $('.circle').hide();
-  $('.about').hide();
-  $('.greeting').hide();
-  $('.know').hide();
-  $('.touch').hide();
-  $('.replay').hide();
-  animateIn();
-  replay();
-  $('.replay').on('click', function(){
-    replay();
-  })
-  playSlides();
-})
 
 function replay(){
   $('.triangle').hide();
@@ -96,48 +134,6 @@ function replay(){
     });
   });
 }
-
-function playSlides(){
-  $('.slickslide').slick({
-    autoplay: false,
-    swipe: true,
-    swipeToSlide: true,
-    touchMove: true,
-    // dots: true,
-    arrows:true,
-    appendArrows: $(".projectos"),
-    asNavFor: null,
-    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-angle-left"></i></button>',
-    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-angle-right"></i></button>',
-    // the magic
-    responsive: [{
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 1,
-          infinite: true
-        }
-      },
-      {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 1,
-            infinite: true
-          }
-        },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          dots: false
-        }
-      },
-       {
-        breakpoint: 300,
-        settings: "unslick" // destroys slick
-      }]
-  });
-}
-
 
 // function getQuote(){
 //   var quotes = [];
