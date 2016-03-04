@@ -110,29 +110,21 @@ function playSlides(){
 // });
 
 function replay(){
-  $('.triangle').hide();
-  $('.square').hide();
-  $('.circle').hide();
-  $('.about').hide();
-  $('.greeting').hide();
-  $('.know').hide();
-  $('.touch').hide();
-  $('.replay').hide();
-  $('.greeting').fadeIn('slow', function(){
-    $('.square').fadeIn('slow', function(){
-      $('.circle').fadeIn('slow', function(){
-        $('.triangle').fadeIn('slow', function(){
+  $('.greeting').fadeIn(300, function(){
+    $('.square').fadeIn(200, function(){
+      $('.circle').fadeIn(200, function(){
+        $('.triangle').fadeIn(200, function(){
           $('.portfolio-link').css( "text-decoration", "underline" );
           $('.about').fadeIn('slow', function(){
-            $(this).fadeOut(1150, function(){
+            $(this).fadeOut(900, function(){
               $('.portfolio-link').css( "text-decoration", "none" );
               $('.about-link').css( "text-decoration", "underline" );
-                $('.know').fadeIn(1150, function(){
+                $('.know').fadeIn(900, function(){
                   $('.about-link').css( "text-decoration", "none" );
-                    $(this).fadeOut(1000, function(){
+                    $(this).fadeOut(750, function(){
                     $('.contact-link').css( "text-decoration", "underline" );
-                    $('.touch').fadeIn(1150, function(){
-                    $('.replay').fadeIn(1150);
+                    $('.touch').fadeIn(900, function(){
+                    $('.replay').fadeIn(900);
                     $('.contact-link').css( "text-decoration", "none");
                     $('.fa-angle').css('color', 'red');
                   });
