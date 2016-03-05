@@ -36,7 +36,7 @@ For more work and information, please see the entire source code.
 			<?xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 400 134" enable-background="new 0 0 400 134" xml:space="preserve">
+			 viewBox="0 0 400 134" enable-background="new 0 0 400 134" xml:space="preserve" class="logo">
 				<polygon class="triangle" fill="#5FCAE8" points="240,131.1 314.5,2.1 389,131.1 "/>
 				<rect class="square" x="9.5" y="2.7" fill="#F1E915" width="128.5" height="128.5"/>
 				<circle class="circle" fill="#F0575A" cx="202.5" cy="66.6" r="64.6"/>
@@ -57,16 +57,22 @@ For more work and information, please see the entire source code.
 			<div class="pause"><i class="fa fa-pause"></i></div>
 		</div>
 	</main>
-	<hr>
+	<hr class="white-pgbrk">
 	<div class="about-section">
-		<h2>ABOUT MYSELF</h2>
-		<p class='me'>I'm a 25 yr. old developer and designer. I like art, design, and politics. I grew up in Denver and then lived in LA for 7 years while attending Occidental College.
-			When it comes to design, I draw inspiration from the wild streets as well as the beautiful mountains.
-		</p>
+		<header class="header" id="header">
+			<div class="skew">
+				<div class="header-inner">
+					<h2>ABOUT MYSELF</h2>
+					<p class='me'>I'm a 25 yr. old developer and designer. I like art, design, and politics. I grew up in Denver and then lived in LA for 7 years while attending Occidental College.
+						When it comes to design, I draw inspiration from the wild streets as well as the beautiful mountains.
+					</p>
+				</header>
+			</div>
+		</div>
 	</div>
 	<hr>
 	<div class="contact">
-		<h2>LET'S TALK</h2>
+		<h2>AROUND THE WEB</h2>
 		<h3 class="contact-subhead">I love to talk about web technologies</h3>
 		<div class="social-media">
 			<div class="icons">
@@ -80,13 +86,17 @@ For more work and information, please see the entire source code.
 		</div>
 	</div>
 	<hr>
+
+	
 	<div class="interact">
 		<div class="interact-wrapper">
-			<h2 class='see'>LIKE WHAT YOU SEE?</h2>
+			<h2 class='see'>LET'S TALK</h2>
 			<h3 class=resume-title>Leave a message</h3>
 			<% include ./partials/messageform %>
 		</div>
 	</div>
+
+
 	<hr>
 	<div class="hiring">
 		<h2>LOOKING TO HIRE?</h2>
@@ -99,12 +109,14 @@ For more work and information, please see the entire source code.
 	</footer>
 	<?xml version="1.0" encoding="utf-8"?>
 		<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 400 150" enable-background="new 0 0 400 150" xml:space="preserve">
-		<polygon fill="#F4F4F4" points="242.4,141.4 318.8,9 395.3,141.4 "/>
-		<rect x="5.7" y="9.6" fill="#F4F4F4" width="131.9" height="131.9"/>
-		<circle fill="#F4F4F4" cx="203.9" cy="75.2" r="66.3"/>
-		</svg>
+		<div class="smallLogoWrapper">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 400 150" enable-background="new 0 0 400 150" xml:space="preserve" class="smallLogo">
+			<polygon fill="#F4F4F4" points="242.4,141.4 318.8,9 395.3,141.4 "/>
+			<rect x="5.7" y="9.6" fill="#F4F4F4" width="131.9" height="131.9"/>
+			<circle fill="#F4F4F4" cx="203.9" cy="75.2" r="66.3"/>
+			</svg>
+		</div>
 	<p class="colophon">Designed and Developed by Alex Bennett, 2016</p>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 	<script src="./js/home.js"></script>
