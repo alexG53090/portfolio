@@ -38,12 +38,13 @@ app.post('/sendmessage', function(req, res, next){
 	var username = req.body.name;
 	var message = req.body.message;
     console.log(req.body);
-	knex('messages').insert({
+	knex('messagesTwo').insert({
 		username: username,
 		message: message
 	}).then(function(){
-		console.log('added ' + username + ' to db')
+		console.log('added ' + username + ' to db');
 	})
+  res.rendirect('/')
 })
 
 app.listen(port, function() {
