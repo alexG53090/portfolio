@@ -166,6 +166,14 @@ font-family: 'Oswald', sans-serif;
 letter-spacing: 2 px;
 }
 
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .slick-dots {
   margin: auto;
   width:100%;
@@ -179,7 +187,7 @@ letter-spacing: 2 px;
 .slick-dots li button {
   border: none;
   background-color: transparent;
-  font-size: 1.5em;
+  font-size: 3.5em;
   font-weight: lighter;
   color:black;
 }
@@ -216,20 +224,28 @@ letter-spacing: 2 px;
   background-color: transparent;
 }
 
-.fa-angle-left {
-  font-size: 1.3em;
+.fa-backward {
+  font-size: 1.5em;
   color: black;
   margin-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
 }
 
-.fa-angle-right {
-  font-size: 1.3em;
+.fa-forward {
+  font-size: 1.5em;
   color: black;
-    margin-left: 50px;
+  margin-left: 50px;
+}
+
+.fa-play {
+  font-size: 1.5em;
+  color: black;
+  margin-right: 50px;
+}
+
+.fa-pause {
+  font-size: 1.5em;
+  color: black;
 }
 
 .fa-angle-left:hover {

@@ -37,10 +37,10 @@ function playSlides(){
     swipeToSlide: true,
     touchMove: true,
     arrows:true,
-    appendArrows: $(".projectos"),
+    appendArrows: $(".dashboard"),
     asNavFor: null,
-    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-angle-left"></i></button>',
-    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-angle-right"></i></button>',
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-backward"></i></button>',
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-forward"></i></button>',
     responsive: [{
         breakpoint: 2000,
         settings: {
@@ -110,6 +110,9 @@ function playSlides(){
 // });
 
 function replay(){
+  $('.know').hide();
+  $('.touch').hide();
+  $('.replay').hide();
   $('.greeting').fadeIn(300, function(){
     $('.square').fadeIn(200, function(){
       $('.circle').fadeIn(200, function(){
