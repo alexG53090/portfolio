@@ -13,6 +13,67 @@ li a { background-color: transparent; color:black; }
   color: black;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*input {
+  border:none;
+  border-bottom: 1px solid black;
+  margin: 2%;
+}
+
+
+input:focus {
+  background-color: #f7f7f7;
+}*/
+
+
+input {
+  width: 100%;
+  font-size: 1.5em;
+  margin: auto;
+  border:none;
+  border-bottom: 1px solid rgba(98,160,220, 1);
+  transition: border-bottom .1s, background-color .5s ease;
+  font-family: "Lato";
+  font-weight: 300;
+  color:black;
+  margin-top: 15px;
+  padding:3%;
+  margin: 3%;
+
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid gold;
+  background-color: #f9f9f9;
+  color:black;
+}
+
+textarea {
+  width: 100%;
+  padding:3%;
+margin: 3%;
+  font-size: 1.5em;
+  margin-top: 2%;
+  outline: none;
+  color:black;
+  border:none;
+  border-bottom: 1px solid rgba(98,160,220, 1);
+  transition: border-bottom .1s, background-color .5s ease;
+}
+
+textarea:focus {
+  color:black;
+  outline: none;
+  border-bottom: 1px solid gold;
+  background-color: #f9f9f9;
+  color:black;
+}
+
 .my-slick-slider {
   height: 100%;
   width: 90%;
@@ -88,7 +149,7 @@ hr {
 
 .contact {
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   width: 90%;
   margin: auto;
   padding: 3%;
@@ -96,6 +157,7 @@ hr {
 .contact-subhead {
   color: #ccc;
 }
+
 
 .slick-track a{
   color:#424242;
@@ -117,7 +179,7 @@ svg {
   flex-direction: row;
   width: 90%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   margin: auto;
   align-items: center;
   padding: 5%;
@@ -172,6 +234,11 @@ letter-spacing: 2 px;
   width: 100%;
   align-items: center;
   justify-content: center;
+  margin-top: 4%;
+}
+
+.dashboard .fa:hover {
+  color:tomato;
 }
 
 .slick-dots {
@@ -256,23 +323,15 @@ letter-spacing: 2 px;
   color:blue;
 }
 
-.hire-me-please {
+.interact {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 175px;
+  height: 100%;
   background-color: white;
   width: 90%;
   margin: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.see {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .me {
@@ -286,7 +345,7 @@ letter-spacing: 2 px;
   font-size: 1.5em;
 }
 
-.hire-me-wrapper {
+.interact-wrapper {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -307,4 +366,12 @@ footer div {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.hiring {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 3%;
 }

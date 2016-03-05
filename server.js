@@ -44,7 +44,7 @@ app.post('/sendmessage', function(req, res, next){
 	}).then(function(){
 		console.log('added ' + username + ' to db');
 	})
-  res.rendirect('/')
+  res.render('index')
 })
 
 app.listen(port, function() {
