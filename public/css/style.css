@@ -116,22 +116,21 @@ img {
 
 .project-description {
   display: flex;
-  /*flex-direction: column;*/
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color:black;
   background-color: transparent;
-  font-weight: lighter;;
+  font-weight: lighter;
   z-index: 99;
   padding: 1em;
   font-size: 1.1em;
-  opacity: .7;
   height:100%;
-  box-sizing: border-box;
-  border: 1px solid #f7f7f7;
-  border-top: none;
-  font-style:italic;
+}
+
+.project-title {
+  display:block;
 }
 
 .call-to-swipe {
@@ -214,14 +213,14 @@ hr {
 
 .about-section {
   text-align: center;
-  background: linear-gradient(to right, yellow , tomato); /* Standard syntax */
+  background: linear-gradient(to right, rgb(94,200,230), rgb(241,233,21),rgb(240,87,90)); /* Standard syntax */
   width:90%;
   margin:auto;
 }
 
 .fa {
   font-size: 4em;
-  color:#ccc;
+  color:black;
   margin-bottom: 20px;
 }
 
@@ -429,7 +428,7 @@ footer div {
   z-index: -1;
   margin:auto;
   /*margin-left: 5%;*/
-  transform: skewY(-.3deg);
+  transform: skewY(-1.5deg);
   -webkit-backface-visibility: hidden;
 }
 

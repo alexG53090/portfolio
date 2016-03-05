@@ -38,7 +38,7 @@ app.post('/sendmessage', function(req, res, next){
 	var username = req.body.name;
 	var message = req.body.message;
     console.log(req.body);
-	knex('messagesTwo').insert({
+	knex('messages').insert({
 		username: username,
 		message: message
 	}).then(function(){
