@@ -36,7 +36,7 @@ input {
   font-size: 1.5em;
   margin: auto;
   border:none;
-  border-bottom: 1px solid rgba(98,160,220, 1);
+  border-bottom: 1px solid #424242;
   transition: border-bottom .1s, background-color .5s ease;
   font-family: "Lato";
   font-weight: 300;
@@ -56,13 +56,13 @@ input:focus {
 textarea {
   width: 100%;
   padding:3%;
-margin: 3%;
+  margin: 3%;
   font-size: 1.5em;
   margin-top: 2%;
   outline: none;
   color:black;
   border:none;
-  border-bottom: 1px solid rgba(98,160,220, 1);
+  border-bottom: 1px solid #424242;
   transition: border-bottom .1s, background-color .5s ease;
 }
 
@@ -101,9 +101,23 @@ text-align: center;
 
 }
 
+.greeting{
+  margin-bottom: 2%;
+}
+
+.post-btn {
+  border:1px solid black;
+  background-color: white;
+  border-radius:10px;
+}
+
+.post-btn:hover {
+  background:rgb(94,200,230); /* Standard syntax */
+}
+
 .header-container {
   margin-top: 75px;
-
+  height: 225px;
 }
 
 main {
@@ -131,6 +145,7 @@ img {
 
 .project-title {
   display:block;
+  font-weight: bolder;
 }
 
 .call-to-swipe {
@@ -180,9 +195,8 @@ hr {
 }
 
 .logo {
-  height: 10%;
-  width: 10%;
-  margin: 2%;
+height:25%;
+
 }
 
 .replay {
@@ -362,7 +376,7 @@ letter-spacing: 2 px;
 }
 
 .me {
-  width:80%;
+  width:60%;
   margin:auto;
   text-align: left;
   font-size: 1.75em;
