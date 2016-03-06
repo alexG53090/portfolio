@@ -23,7 +23,7 @@ form {
 ::-webkit-input-placeholder {
   color: black; }
 
-input {
+input[type='text'] {
   width: 100%;
   font-size: 1.5em;
   margin: auto;

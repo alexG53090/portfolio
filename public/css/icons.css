@@ -48,25 +48,41 @@
   color: black; }
 
 .fa-backward {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-right: 50px; }
 
 .fa-forward {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-left: 50px; }
 
 .fa-play {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-right: 50px; }
 
 .fa-pause {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black; }
 
-.fa-angle-left:hover {
+.fa-backward:hover {
+  font-size: 2em;
+  color: blue;
+  margin-right: 50px; }
+
+.fa-forward:hover {
+  font-size: 2em;
+  color: blue;
+  margin-left: 50px; }
+
+.fa-play:hover {
+  font-size: 2em;
+  color: green;
+  margin-right: 50px; }
+
+.fa-pause:hover {
+  font-size: 2em;
   color: red; }
 
 /*# sourceMappingURL=icons.css.map */

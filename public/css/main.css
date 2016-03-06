@@ -130,13 +130,11 @@ footer div {
   padding-top: 2%;
   font-size: 1em;
   font-weight: 400;
-  color: #ccc; }
+  color: #808080;
+  margin-top: -15px; }
 
 .dashboard .fa {
   margin-top: 21px; }
-
-.dashboard .fa:hover {
-  color: tomato; }
 
 .slick-dots {
   margin: auto;
@@ -207,7 +205,7 @@ form {
 ::-webkit-input-placeholder {
   color: black; }
 
-input {
+input[type='text'] {
   width: 100%;
   font-size: 1.5em;
   margin: auto;
@@ -305,27 +303,60 @@ textarea:focus {
   color: black; }
 
 .fa-backward {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-right: 50px; }
 
 .fa-forward {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-left: 50px; }
 
 .fa-play {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   margin-right: 50px; }
 
 .fa-pause {
-  font-size: 1.5em;
+  font-size: 2em;
   color: black; }
 
-.fa-angle-left:hover {
+.fa-backward:hover {
+  font-size: 2em;
+  color: blue;
+  margin-right: 50px; }
+
+.fa-forward:hover {
+  font-size: 2em;
+  color: blue;
+  margin-left: 50px; }
+
+.fa-play:hover {
+  font-size: 2em;
+  color: green;
+  margin-right: 50px; }
+
+.fa-pause:hover {
+  font-size: 2em;
   color: red; }
 
+@media screen and (max-width: 799px) {
+  .me {
+    width: 100%; }
+
+  .fa {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px; } }
+@media screen and (min-width: 800px) {
+  .me {
+    width: 100%; } }
+@media screen and (min-width: 1000px) {
+  .me {
+    width: 100%; } }
+@media screen and (min-width: 1200px) {
+  .me {
+    width: 80%; } }
 .header-breakout {
   height: 200px;
   display: flex;
@@ -333,5 +364,23 @@ textarea:focus {
   align-items: center; }
   .header-breakout .sub-greeting {
     margin-top: 5%; }
+
+#overlay {
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+.hide {
+  display: none; }
+
+.form-group button {
+  padding: 0 0 0 0;
+  height: 75px;
+  width: 100%;
+  margin-left: 3%; }
 
 /*# sourceMappingURL=main.css.map */

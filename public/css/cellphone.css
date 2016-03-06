@@ -1,0 +1,19 @@
+@media screen and (max-width: 799px) {
+  .me {
+    width: 100%; }
+
+  .fa {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px; } }
+@media screen and (min-width: 800px) {
+  .me {
+    width: 100%; } }
+@media screen and (min-width: 1000px) {
+  .me {
+    width: 100%; } }
+@media screen and (min-width: 1200px) {
+  .me {
+    width: 80%; } }
+
+/*# sourceMappingURL=cellphone.css.map */

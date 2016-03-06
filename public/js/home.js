@@ -1,3 +1,8 @@
+$(window).load(function() {
+ $('#overlay').addClass('hide');
+});
+
+
 $(document).ready(function(){
   hideElements();
   playSlides();
