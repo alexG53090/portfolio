@@ -30,6 +30,10 @@ app.get('/portfolio', function(req, res) {
 	res.render('portfolio');
 });
 
+app.get('/thankyou', function(req, res, next){
+  res.render('thankyou')
+})
+
 app.get('/flybuy', function(req, res) {
 	res.render('flybuy');
 });
@@ -46,7 +50,7 @@ app.post('/sendmessage', function(req, res, next){
       console.log('added ' + username + ' to db');
     })
   }
-  res.render('index')
+  res.redirect('thankyou')
 })
 
 app.listen(port, function() {
