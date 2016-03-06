@@ -24,6 +24,7 @@ form {
   color:black;
 }
 
+
 input {
   width: 100%;
   font-size: 1.5em;
@@ -174,8 +175,9 @@ hr {
 }
 
 .smallLogo {
-  margin:auto;
-  width:200px;
+  height:30px;
+  margin: auto;
+  width:100%;
 }
 
 .smallLogoWrapper {
@@ -189,7 +191,6 @@ hr {
 
 .logo {
 height:25%;
-
 }
 
 .replay {
@@ -489,4 +490,23 @@ section {
   padding: 0 20px;
   padding-bottom: 10px;
   position: relative;
+}
+
+.portfolio-link:hover {
+
+}
+.about-link:hover {
+
+}
+.contact-link:hover {
+
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: #5FCAE8;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: black;
+    background-color: #5FCAE8;
 }
