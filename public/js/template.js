@@ -1,6 +1,5 @@
 $(document).ready(function(){
   animateLogo();
-  grabQuote();
 })
 
 window.onload=function(){
@@ -8,6 +7,7 @@ window.onload=function(){
          if(window.location.protocol==="https:")
              window.location.protocol="http";
      });
+     grabQuote();
  }
 
 function grabQuote(){
