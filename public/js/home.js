@@ -4,11 +4,21 @@ $(window).load(function() {
 
 
 $(document).ready(function(){
+  // $('#myForm').validator()
   hideElements();
   playSlides();
   // animateIn();
   replay();
   getQuote()
+
+})
+
+$('#myForm').validator().on('submit', function (e) {
+if (e.isDefaultPrevented()) {
+  // handle the invalid form...
+} else {
+  // everything looks good!
+}
 })
 
 $('.replay').on('click', function(){
