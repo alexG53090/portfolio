@@ -1,0 +1,61 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  /*background-color: #f9f9f9;*/
+  background-color: transparent;
+  margin: auto;
+  align-items: center;
+  padding: 5%;
+}
+.icon {
+  margin: auto;
+  width: 10%;
+  text-align: center;
+}
+.icons .icon p {
+  text-align: center;
+}
+.about-section {
+  text-align: center;
+  background: linear-gradient(to right, rgb(94,200,230), rgb(241,233,21),rgb(240,87,90)); /* Standard syntax */
+  width:90%;
+  margin:auto;
+}
+.fa {
+  font-size: 4em;
+  color:black;
+  margin-bottom: 20px;
+}
+.fa-github:hover { color: green;}
+.fa-stack-overflow:hover { color: orange;}
+.fa-twitter:hover { color: cornflowerblue;}
+.fa-code:hover { color: red;}
+.fa-linkedin:hover { color: blue;}
+.fa-codepen:hover { color: black;}
+
+//////// Dashboard
+
+.fa-backward {
+  font-size: 1.5em;
+  color: black;
+  margin-right: 50px;
+}
+.fa-forward {
+  font-size: 1.5em;
+  color: black;
+  margin-left: 50px;
+}
+.fa-play {
+  font-size: 1.5em;
+  color: black;
+  margin-right: 50px;
+}
+.fa-pause {
+  font-size: 1.5em;
+  color: black;
+}
+.fa-angle-left:hover {
+  color:red;
+}

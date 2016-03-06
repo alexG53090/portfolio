@@ -1,0 +1,16 @@
+@import "nav";
+@import "skewed";
+@import "footer";
+@import "carousel";
+@import "interact";
+@import "icons";
+
+.header-breakout {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  .sub-greeting {
+    margin-top: 5%;
+  }
+}

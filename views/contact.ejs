@@ -27,6 +27,8 @@ For more work and information, please see the entire source code.
 	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" />
@@ -39,19 +41,19 @@ For more work and information, please see the entire source code.
 <body>
 <% include ./partials/nav %>
 	<header>
-		<div class="header-container">
-			<h1 class="greeting">Contact</h1>
+		<div class="header-breakout">
+			<h1 class="sub-greeting">Contact</h1>
 		</div>
 	</header>
-	<hr>
   <div class="hiring">
-    <h2>LOOKING TO HIRE?</h2>
+    <h2>Hit me up anytime.</h2>
     <h3>Phone: (303) 518-5032</h3>
     <h3>Email: alexbennettuxui@gmail.com</h3>
     <p>Checkout my resume</p>
     <a class='resume' href="./ab_resume.pdf">Resume.pdf</a>
   </div>
 	<hr>
+	<% include ./partials/messageform %>
 	<footer>
 		<% include ./partials/nav %>
 	</footer>
@@ -67,6 +69,6 @@ For more work and information, please see the entire source code.
 		</div>
 	<p class="colophon">Designed and Developed by Alex Bennett, 2016</p>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-	<script src="./js/home.js"></script>
+	<!-- <script src="./js/home.js"></script> -->
 </body>
 </html>
