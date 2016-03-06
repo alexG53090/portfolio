@@ -3,6 +3,7 @@ $(document).ready(function(){
   playSlides();
   // animateIn();
   replay();
+  getQuote()
 })
 
 $('.replay').on('click', function(){
@@ -141,26 +142,28 @@ function replay(){
   });
 }
 
-// function getQuote(){
-//   var quotes = [];
-//   $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
-//     for (var obj of a) {
-//       var quote = {}
-//       quote.author = obj.title;
-//       quote.quote = obj.content;
-//       quote.url = obj.link;
-//       quotes.push(quote);
-//     }
-//   }).then(function(quote){
-//     var randNum = Math.floor(Math.random() * 39);
-//     var q = quotes[randNum];
-//     $("#quote").empty();
-//     $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
-//     $("#new-quote").click(function() {
-//       var randNum = Math.floor(Math.random() * 39);
-//       var q = quotes[randNum];
-//       $("#quote").empty();
-//       $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
-//     });
-//   });
-// }
+function getQuote(){
+  var quotes = [];
+  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
+    for (var obj of a) {
+      var quote = {}
+      quote.author = obj.title;
+      quote.quote = obj.content;
+      quote.url = obj.link;
+      quotes.push(quote);
+    }
+  }).then(function(quote){
+    console.log('no qutoe');
+    console.log(quote)
+    var randNum = Math.floor(Math.random() * 39);
+    var q = quotes[randNum];
+    $("#quote").empty();
+    $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
+    $("#new-quote").click(function() {
+      var randNum = Math.floor(Math.random() * 39);
+      var q = quotes[randNum];
+      $("#quote").empty();
+      $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
+    });
+  });
+}

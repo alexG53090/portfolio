@@ -25,7 +25,7 @@ For more work and information, please see the entire source code.
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
@@ -33,7 +33,6 @@ For more work and information, please see the entire source code.
 	<header>
 		<div class="header-container">
 			<h1 class="greeting">Hello! I'm Alex.</h1>
-
 			<?xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,7 +75,6 @@ For more work and information, please see the entire source code.
 	</div>
 	<div class="contact">
 		<h2>AROUND THE WEB</h2>
-		<!-- <h3 class="contact-subhead">I love to talk about web technologies</h3> -->
 		<div class="social-media">
 			<div class="icons">
 				<div class="icon"><i class="fa fa-github"></i><div>GitHub</div></div>
@@ -88,22 +86,16 @@ For more work and information, please see the entire source code.
 			</div>
 		</div>
 	</div>
-	<!-- <hr class="white-pgbrk"> -->
-	<!-- <hr> -->
 	<div class="interact">
 		<div class="interact-wrapper">
 			<h2 class='see'>LEAVE A MESSAGE</h2>
 			<hr class="white-pgbrk">
-
-			<!-- <h3 class=resume-title>Leave a message</h3> -->
 			<% include ./partials/messageform %>
-			<!-- <hr class="white-pgbrk"> -->
-
 		</div>
 	</div>
-
 	<hr>
 	<div class="hiring">
+		<div id="quote"><div id="new-quote"></div></div>
 		<h2>LOOKING TO HIRE?</h2>
 		<p>Checkout my resume</p>
 		<a class='resume' href="./ab_resume.pdf">Resume.pdf</a>
@@ -125,5 +117,15 @@ For more work and information, please see the entire source code.
 	<p class="colophon">Designed and Developed by Alex Bennett, 2016</p>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 	<script src="./js/home.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74719930-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
