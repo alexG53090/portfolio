@@ -115,6 +115,23 @@ footer div {
   margin: auto;
   border-radius: 5%; }
 
+.dash-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  background-color: #f7f7f7;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  margin: auto;
+  border-radius: 5%; }
+
+.project-nav {
+  padding-top: 2%;
+  font-size: 1em;
+  font-weight: 400;
+  color: #ccc; }
+
 .dashboard .fa {
   margin-top: 21px; }
 
