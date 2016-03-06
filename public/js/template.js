@@ -79,10 +79,10 @@ function getQuote() {
         return;
       }
       //format URLs
-      var authorWiki = '<a target="_blank" href="https://wikipedia.org/wiki/' + data.quoteAuthor + '"><img class="authorWiki" src="http://tylermoeller.github.io/random-quote-generator/assets/img/logo-wiki.png"></img></a>';
-      var shareUrl = encodeURIComponent(data.quoteText + "~" + data.quoteAuthor) + " http://s.codepen.io/TylerMoeller/debug/WQGjvO";
+      var authorWiki = '<a target="_blank" href="https://wikipedia.org/wiki/' + data.quoteAuthor + '"><img class="authorWiki" src="https://tylermoeller.github.io/random-quote-generator/assets/img/logo-wiki.png"></img></a>';
+      var shareUrl = encodeURIComponent(data.quoteText + "~" + data.quoteAuthor) + " https://s.codepen.io/TylerMoeller/debug/WQGjvO";
       // added \t to the url to bypass adblocker
-      var shareQuote = '<a target="_blank" href="https://twitter.com/intent/twee\tt' + '?text=' + shareUrl + '"><img class="shareQuote" src="http://tylermoeller.github.io/random-quote-generator/assets/img/logo-twit.png"></a>';
+      var shareQuote = '<a target="_blank" href="https://twitter.com/intent/twee\tt' + '?text=' + shareUrl + '"><img class="shareQuote" src="https://tylermoeller.github.io/random-quote-generator/assets/img/logo-twit.png"></a>';
 
       //populate html
       document.getElementById("quote-block").innerHTML = '<p id="quote"></p><p><i id="author"></i></p>';
@@ -92,7 +92,7 @@ function getQuote() {
       //handle null authors
       if (data.quoteAuthor.length === 0) {
         document.getElementById("author").innerHTML = "~ Anyonymous";
-        document.getElementById("authorWiki").innerHTML = '<a href="http://wikipedia.org/wiki/anonymous"><img class="authorWiki" src="http://tylermoeller.github.io/random-quote-generator/assets/img/logo-wiki.png"></img></a>';
+        document.getElementById("authorWiki").innerHTML = '<a href="https://wikipedia.org/wiki/anonymous"><img class="authorWiki" src="https://tylermoeller.github.io/random-quote-generator/assets/img/logo-wiki.png"></img></a>';
       } else {
         document.getElementById("author").innerHTML = "~ " + data.quoteAuthor;
         document.getElementById("authorWiki").innerHTML = authorWiki;
