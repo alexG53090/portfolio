@@ -384,6 +384,13 @@ letter-spacing: 2 px;
   padding: 3%;
 }
 
+
+.my-face {
+  width:100%;
+  margin-top:3%;
+  /*border-radius: 40%;*/
+}
+
 .me::first-letter {
   margin-left: 5%;
   font-size: 1.5em;
@@ -452,7 +459,7 @@ footer div {
   margin-left: auto;
   margin-right: auto;
   color:black;
-  width: 90%;
+  width: 100%;
 
 }
 
