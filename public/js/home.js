@@ -6,7 +6,9 @@ $(document).ready(function(){
   hideElements();
   playSlides();
   replay();
-  getQuote()
+  dashBoard();
+  // getQuote();
+  // animateIn();
 })
 
 $('#myForm').validator().on('submit', function (e) {
@@ -20,15 +22,16 @@ $('.replay').on('click', function(){
   replay();
 })
 
-$('.pause').on('click', function() {
+function dashBoard(){
+  $('.pause').on('click', function() {
     $('.slickslide')
-        .slick('slickPause')
-});
-
-$('.play').on('click', function() {
+    .slick('slickPause')
+  });
+  $('.play').on('click', function() {
     $('.slickslide')
-        .slick('slickPlay')
-});
+    .slick('slickPlay')
+  });
+}
 
 function hideElements(){
   $('.triangle').hide();
@@ -79,31 +82,31 @@ function playSlides(){
       }]
   });
 }
-//
-// function animateIn(){
-//   $(window).on("load",function() {
-//       function fade() {
-//         var itemsToAnimate = [];
-//         var me = $('.me'), icons = $('.icons'), colophon = $('.colophon'), see = $('.see'), resumeTitle = $('.resume-title'), resume = $('.resume');
-//         itemsToAnimate.push(me, icons, see, resumeTitle, resume);
-//         itemsToAnimate.forEach(function(index) {
-//             var objectBottom = $(index).offset().top + $(index).outerHeight();
-//             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-//             if (objectBottom < windowBottom - 100) { //object comes into view (scrolling down)
-//               if ($(index).css('opacity')==0) {
-//                 $(index).fadeTo(1000,1);
-//               }
-//             } else {
-//               if ($(index).css('opacity')==1) {
-//                 $(index).fadeTo(1000,0);
-//               }
-//             }
-//         });
-//       }
-//       fade(); //Fade in completely visible elements during page-load
-//       $(window).scroll(function() {fade();}); //Fade in elements during scroll
-//   });
-// }
+
+function animateIn(){
+  $(window).on("load",function() {
+      function fade() {
+        var itemsToAnimate = [];
+        var me = $('.me'), icons = $('.icons'), colophon = $('.colophon'), see = $('.see'), resumeTitle = $('.resume-title'), resume = $('.resume');
+        itemsToAnimate.push(me, icons, see, resumeTitle, resume);
+        itemsToAnimate.forEach(function(index) {
+            var objectBottom = $(index).offset().top + $(index).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+            if (objectBottom < windowBottom - 100) { //object comes into view (scrolling down)
+              if ($(index).css('opacity')==0) {
+                $(index).fadeTo(1000,1);
+              }
+            } else {
+              if ($(index).css('opacity')==1) {
+                $(index).fadeTo(1000,0);
+              }
+            }
+        });
+      }
+      fade(); //Fade in completely visible elements during page-load
+      $(window).scroll(function() {fade();}); //Fade in elements during scroll
+  });
+}
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -148,32 +151,6 @@ function replay(){
           });
         });
       });
-    });
-  });
-}
-
-function getQuote(){
-  var quotes = [];
-  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback", function(a) {
-    for (var obj of a) {
-      var quote = {}
-      quote.author = obj.title;
-      quote.quote = obj.content;
-      quote.url = obj.link;
-      quotes.push(quote);
-    }
-  }).then(function(quote){
-    console.log('no qutoe');
-    console.log(quote)
-    var randNum = Math.floor(Math.random() * 39);
-    var q = quotes[randNum];
-    $("#quote").empty();
-    $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
-    $("#new-quote").click(function() {
-      var randNum = Math.floor(Math.random() * 39);
-      var q = quotes[randNum];
-      $("#quote").empty();
-      $("#quote").append(q.quote + "<p class='author'>&mdash; " + "<a href='" + q.url + "'>" + q.author + "</a></p>");
     });
   });
 }

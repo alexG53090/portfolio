@@ -11,6 +11,9 @@
   color: black;
   background-color: #5FCAE8; }
 
+.navbar {
+  margin-left: 3%; }
+
 /*****Skewed Divs***********/
 .header {
   z-index: 1;
@@ -347,7 +350,10 @@ textarea:focus {
   .fa {
     font-size: 2em;
     color: black;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  p {
+    font-size: 2em; } }
 @media screen and (min-width: 800px) {
   .me {
     width: 100%; } }

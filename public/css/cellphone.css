@@ -5,7 +5,10 @@
   .fa {
     font-size: 2em;
     color: black;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  p {
+    font-size: 2em; } }
 @media screen and (min-width: 800px) {
   .me {
     width: 100%; } }
