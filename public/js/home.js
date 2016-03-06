@@ -2,22 +2,17 @@ $(window).load(function() {
  $('#overlay').addClass('hide');
 });
 
-
 $(document).ready(function(){
-  // $('#myForm').validator()
   hideElements();
   playSlides();
-  // animateIn();
   replay();
   getQuote()
-
 })
 
 $('#myForm').validator().on('submit', function (e) {
 if (e.isDefaultPrevented()) {
-  // handle the invalid form...
+  console.log('nope')
 } else {
-  // everything looks good!
 }
 })
 
@@ -110,20 +105,20 @@ function playSlides(){
 //   });
 // }
 
-// $(function() {
-//   $('a[href*="#"]:not([href="#"])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//       if (target.length) {
-//         $('html, body').animate({
-//           scrollTop: target.offset().top
-//         }, 500);
-//         return false;
-//       }
-//     }
-//   });
-// });
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
 
 function replay(){
   $('.know').hide();

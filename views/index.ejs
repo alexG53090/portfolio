@@ -45,7 +45,7 @@ For more work and information, please see the entire source code.
 
 <% include ./partials/nav %>
 	<header>
-		<div class="header-container">
+		<div class="header-container" id='home'>
 			<h1 class="greeting">Hello! I'm Alex.</h1>
 			<?xml version="1.0" encoding="utf-8"?>
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -88,23 +88,7 @@ For more work and information, please see the entire source code.
 			</div>
 		</div>
 	</div>
-	<div class="contact">
-		<h2>AROUND THE WEB</h2>
-		<div class="social-media">
-			<div class="icons">
-				<div class="icon"><i class="fa fa-github"></i><div>GitHub</div></div>
-				<div class="icon"><i class="fa fa-linkedin"></i><div>LinkedIn</div></div>
-				<div class="icon"><i class="fa fa-twitter"></i><div>Twitter</div></div>
-				<div class="icon"><i class="fa fa-stack-overflow"></i><div>Stack Overflow</div></div>
-			</div>
-			<div class="icons">
-				<div class="icon"><i class="fa fa-code"></i><div>NPM</div></div>
-				<div class="icon"><i class="fa fa-codepen"></i><div>Codepen</div></div>
-				<div class="icon"><i class="fa fa-behance"></i><div>Behance</div></div>
-				<div class="icon"><i class="fa fa-file-pdf-o"></i><div>Resume</div></div>
-			</div>
-		</div>
-	</div>
+	<% include ./partials/aroundtheweb %>
 	<% include ./partials/messageform %>
 	<footer>
 		<% include ./partials/nav %>

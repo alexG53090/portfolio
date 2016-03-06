@@ -19,7 +19,7 @@ header { text-align: center; }
 
 
 .header-container {
-  margin-top: 75px;
+  /*margin-top: 75px;*/
   height: 225px;
 }
 
@@ -30,8 +30,6 @@ main {
 img {
   width: 100%;
 }
-
-
 
 hr {
   width: 90%;
