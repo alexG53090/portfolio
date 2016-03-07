@@ -54,6 +54,7 @@
 
 .replay:hover {
   color: cornflowerblue;
+  cursor: pointer;
 }
 
 ///////////////////////////
@@ -93,3 +94,10 @@
    position: fixed;
    z-index: 9999;
  }
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
