@@ -420,7 +420,7 @@ textarea:focus {
 #loading {
   -webkit-animation-name: loading;
   -webkit-animation-duration: 1s;
-  height: 100px;
+  height: 2px;
   background-color: black;
   top: 50%;
   position: fixed; }
