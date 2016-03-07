@@ -439,4 +439,18 @@ textarea:focus {
   align-items: center;
   justify-content: center; }
 
+.long-description {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  padding: 2%; }
+
+.long-description::first-letter {
+  margin-left: 5%;
+  font-size: 1.5em; }
+
+.description-wrapper {
+  display: flex;
+  flex-direction: row; }
+
 /*# sourceMappingURL=main.css.map */
