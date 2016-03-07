@@ -68,21 +68,21 @@
 
 .fa-backward:hover {
   font-size: 2em;
-  color: blue;
+  color: cornflowerblue;
   margin-right: 50px; }
 
 .fa-forward:hover {
   font-size: 2em;
-  color: blue;
+  color: cornflowerblue;
   margin-left: 50px; }
 
 .fa-play:hover {
   font-size: 2em;
-  color: green;
+  color: chartreuse;
   margin-right: 50px; }
 
 .fa-pause:hover {
   font-size: 2em;
-  color: red; }
+  color: tomato; }
 
 /*# sourceMappingURL=icons.css.map */

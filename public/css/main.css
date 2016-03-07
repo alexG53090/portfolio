@@ -326,22 +326,22 @@ textarea:focus {
 
 .fa-backward:hover {
   font-size: 2em;
-  color: blue;
+  color: cornflowerblue;
   margin-right: 50px; }
 
 .fa-forward:hover {
   font-size: 2em;
-  color: blue;
+  color: cornflowerblue;
   margin-left: 50px; }
 
 .fa-play:hover {
   font-size: 2em;
-  color: green;
+  color: chartreuse;
   margin-right: 50px; }
 
 .fa-pause:hover {
   font-size: 2em;
-  color: red; }
+  color: tomato; }
 
 @media screen and (max-width: 799px) {
   .me {
@@ -403,5 +403,8 @@ textarea:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.replay:hover {
+  color: cornflowerblue; }
 
 /*# sourceMappingURL=main.css.map */

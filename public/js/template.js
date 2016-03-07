@@ -32,7 +32,7 @@ function playSlides(){
         settings: {
           slidesToShow: 1,
           infinite: true,
-          settings: "unslick",
+          settings: "unslick"
         }
       },
       {
@@ -48,6 +48,7 @@ function playSlides(){
         settings: {
           slidesToShow: 1,
           dots: false
+          settings: "unslick"
         }
       },
        {
