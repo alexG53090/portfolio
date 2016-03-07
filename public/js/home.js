@@ -11,12 +11,12 @@ $(document).ready(function(){
   // animateIn();
 })
 
-$('#myForm').validator().on('submit', function (e) {
-if (e.isDefaultPrevented()) {
-  console.log('nope')
-} else {
-}
-})
+// $('#myForm').validator().on('submit', function (e) {
+// if (e.isDefaultPrevented()) {
+//   console.log('nope')
+// } else {
+// }
+// })
 
 $('.replay').on('click', function(){
   replay();
