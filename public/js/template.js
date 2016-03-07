@@ -31,9 +31,9 @@ function animateLogo(){
           },
           success: function (data) {
             var twitterLink;
-            document.getElementById('quote').innerHTML = data.quote + '<em id="author"> ' + "<br>" + data.author + '</em>';
+            document.getElementById('quote').innerHTML = "'" + data.quote + "'" + '<em id="author"> ' + "<br>" + data.author + '</em>';
             twitterLink = document.getElementById('tweet');
-            twitterLink.href = 'https://twitter.com/intent/tweet?text=' + 'Look at my friend\'s personal website!' + ' http://alexbennett.tech/';
+            twitterLink.href = 'https://twitter.com/intent/tweet?text=' + data.quote +" -" + data.author + ' http://alexbennett.tech/';
             twitterLink.target = '_blank';
           }
         });

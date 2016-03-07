@@ -39,10 +39,15 @@
   width: 100%;
   margin-left: 3%;
 }
-
-
 .loader {
   height:150px;
   width: 150px;
   margin:auto;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
