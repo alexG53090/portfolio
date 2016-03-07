@@ -47,7 +47,7 @@ function playSlides(){
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          dots: false
+          dots: false,
           settings: "unslick"
         }
       },
