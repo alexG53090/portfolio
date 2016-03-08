@@ -453,4 +453,8 @@ textarea:focus {
   display: flex;
   flex-direction: row; }
 
+.roles .tech {
+  font-size: .5em;
+  color: #424242; }
+
 /*# sourceMappingURL=main.css.map */
