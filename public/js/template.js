@@ -17,7 +17,6 @@ function animateLogo(){
   })
 }
 
-
 function navigator(){
   var portfolio = 'portfolio';
   var abour = 'about';
