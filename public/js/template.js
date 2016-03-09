@@ -19,11 +19,9 @@ function animateLogo(){
 
 
 function navigator(){
-
   var portfolio = 'portfolio';
   var abour = 'about';
   var contact = 'contact';
-
   if (window.location.href.indexOf('portfolio')) {
     console.log('portfolio page');
   } else if (window.location.href.indexOf('about')) {
