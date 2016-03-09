@@ -12,25 +12,9 @@ $(document).ready(function(){
   playSlides();
   replay();
   dashBoard();
-  // getQuote();
-  // animateIn();
-  navigator();
   $('.homer').css('background-color', 'rgb(241,233,21)')
+  goToGoogle();
 })
-
-function navigator(){
-  if(window.location.href == 'https://monportfolio.herokuapp.com/' || 'localhost:8080'){
-    console.log('you are home')
-  } else if (window.location.href == 'https://monportfolio.herokuapp.com/portfolio' || 'localhost:8080/portfolio') {
-    console.log('portfolio page');
-  } else if (window.location.href == 'https://monportfolio.herokuapp.com/about' || 'localhost:8080/about') {
-    console.log('about page');
-  } else if (window.location.href == 'https://monportfolio.herokuapp.com/contact' || 'localhost:8080/contact') {
-    console.log('contact page');
-  } else {
-    console.log('are you even on the site???');
-  }
-}
 
 $('.replay').on('click', function(){
   replay();
@@ -167,4 +151,25 @@ function replay(){
       });
     });
   });
+}
+
+function goToGoogle(){
+  var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+  var isFirefox = typeof InstallTrigger !== 'undefined';
+  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+  var isEdge = !isIE && !!window.StyleMedia;
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
+  var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+  if(isChrome){
+    console.log('THIS IS CHROME');
+  } if(isFirefox){
+    console.log('Firefox');
+    document.body.innerHTML = "This website depends on technology that is not supported by FireFox, plase go to google";
+  } if(isSafari){
+    document.body.innerHTML = "go to google";
+  }else {
+    console.log('nothing ot report');
+  }
 }
