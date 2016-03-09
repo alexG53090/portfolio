@@ -1,19 +1,19 @@
-$(window).load(function() {
- $('#overlay').addClass('hide');
-});
+// $(window).load(function() {
+//  $('#overlay').addClass('hide');
+// });
 
 $(document).ready(function(){
-  $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-   function(e) {
-     $('#loadingscreen').fadeOut(500);
-    //  $('#loadingscreen').remove();
-   });
+  // $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+  //  function(e) {
+  //    $('#loadingscreen').fadeOut(500);
+  //   //  $('#loadingscreen').remove();
+  //  });
   hideElements();
   playSlides();
   replay();
   dashBoard();
   $('.homer').css('background-color', 'rgb(241,233,21)')
-  goToGoogle();
+  // goToGoogle();
 })
 
 function hideElements(){
@@ -112,20 +112,20 @@ function replay(){
   });
 }
 
-function goToGoogle(){
-  var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-  var isFirefox = typeof InstallTrigger !== 'undefined';
-  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-  var isIE = /*@cc_on!@*/false || !!document.documentMode;
-  var isEdge = !isIE && !!window.StyleMedia;
-  var isChrome = !!window.chrome && !!window.chrome.webstore;
-  var isBlink = (isChrome || isOpera) && !!window.CSS;
-  if(isChrome){
-    console.log('THIS IS CHROME');
-  } if(isFirefox){
-    console.log('Firefox');
-    document.body.innerHTML = "This website depends on technology that is not supported by FireFox, plase go to google";
-  } else {
-    console.log('nothing ot report');
-  }
-}
+// function goToGoogle(){
+//   var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+//   var isFirefox = typeof InstallTrigger !== 'undefined';
+//   var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+//   var isIE = /*@cc_on!@*/false || !!document.documentMode;
+//   var isEdge = !isIE && !!window.StyleMedia;
+//   var isChrome = !!window.chrome && !!window.chrome.webstore;
+//   var isBlink = (isChrome || isOpera) && !!window.CSS;
+//   if(isChrome){
+//     console.log('THIS IS CHROME');
+//   } if(isFirefox){
+//     console.log('Firefox');
+//     document.body.innerHTML = "This website depends on technology that is not supported by FireFox, plase go to google";
+//   } else {
+//     console.log('nothing ot report');
+//   }
+// }
