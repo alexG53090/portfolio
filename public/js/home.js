@@ -19,10 +19,16 @@ $(document).ready(function(){
 
 
 function navigator(){
-  if(window.location.href == 'https://monportfolio.herokuapp.com/'){
+  if(window.location.href == 'https://monportfolio.herokuapp.com/' || 'localhost:8080'){
     console.log('you are home')
+  } if (window.location.href == 'https://monportfolio.herokuapp.com/portfolio' || 'localhost:8080/portfolio') {
+    console.log('portfolio page');
+  } if (window.location.href == 'https://monportfolio.herokuapp.com/about' || 'localhost:8080/about') {
+    console.log('about page');
+  } if (window.location.href == 'https://monportfolio.herokuapp.com/contact' || 'localhost:8080/contact') {
+    console.log('contact page');
   } else {
-    console.log('you are not home');
+    console.log('are you even on the site???');
   }
 }
 
