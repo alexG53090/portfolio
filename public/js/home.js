@@ -14,8 +14,17 @@ $(document).ready(function(){
   dashBoard();
   // getQuote();
   // animateIn();
-  console.log(window.location.href);
+  navigator();
 })
+
+
+function navigator(){
+  if(window.location.href == 'https://monportfolio.herokuapp.com/'){
+    console.log('you are home')
+  } else {
+    console.log('you are not home');
+  }
+}
 
 $('.replay').on('click', function(){
   replay();
