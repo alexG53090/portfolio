@@ -1,6 +1,7 @@
 $(document).ready(function(){
   animateLogo();
   playSlides();
+  console.log(window.location.href);
 })
 
 function animateLogo(){

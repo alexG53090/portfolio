@@ -10,6 +10,10 @@
     p {
       font-size: 2em;
     }
+    .description-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
 
 }
 
@@ -17,12 +21,20 @@
     .me {
       width:100%;
     }
+    .description-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 
 @media screen and (min-width: 1000px) {
     .me {
       width:100%;
+    }
+    .description-wrapper {
+      display: flex;
+      flex-direction: column;
     }
 }
 

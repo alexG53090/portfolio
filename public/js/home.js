@@ -6,7 +6,7 @@ $(document).ready(function(){
   $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
    function(e) {
      $('#loadingscreen').fadeOut(500);
-     //$('#loadingscreen').remove();
+    //  $('#loadingscreen').remove();
    });
   hideElements();
   playSlides();
@@ -14,14 +14,8 @@ $(document).ready(function(){
   dashBoard();
   // getQuote();
   // animateIn();
+  console.log(window.location.href);
 })
-
-// $('#myForm').validator().on('submit', function (e) {
-// if (e.isDefaultPrevented()) {
-//   console.log('nope')
-// } else {
-// }
-// })
 
 $('.replay').on('click', function(){
   replay();
