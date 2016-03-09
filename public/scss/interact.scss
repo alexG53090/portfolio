@@ -72,13 +72,15 @@ textarea:focus {
 
 .post-btn {
   border: none;
-  background-color: white;
+  background-color: #f9f9f9;
   border-radius:10px;
   font-size: 1.5em;
+  border: 1px solid black;
+  transition: border-color, background-color, color, 1s ease;
 }
 
 .post-btn:hover {
-  background:black; /* Standard syntax */
+  background-color:black; /* Standard syntax */
   color:white;
-
+  border: 1px solid white;
 }

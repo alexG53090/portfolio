@@ -11,6 +11,7 @@
 
 .navbar-default .navbar-nav>li>a {
   color:black;
+  transition: .3s, background-color, color, ease;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
