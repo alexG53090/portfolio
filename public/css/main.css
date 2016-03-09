@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+.portfolio-link:hover {
+  background-color: red; }
+
 .navbar-default .navbar-nav > li > a {
   color: black; }
 
@@ -9,8 +12,8 @@
   background-color: #5FCAE8; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: black;
-  background-color: #5FCAE8; }
+  color: white;
+  background-color: black; }
 
 .navbar {
   margin-left: 3%; }
@@ -249,13 +252,15 @@ textarea:focus {
   color: black; }
 
 .post-btn {
-  border: 1px solid black;
+  border: none;
   background-color: white;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1.5em; }
 
 .post-btn:hover {
-  background: #5ec8e6;
-  /* Standard syntax */ }
+  background: black;
+  /* Standard syntax */
+  color: white; }
 
 .icons {
   display: flex;
@@ -287,24 +292,6 @@ textarea:focus {
   font-size: 4em;
   color: black;
   margin-bottom: 20px; }
-
-.fa-github:hover {
-  color: green; }
-
-.fa-stack-overflow:hover {
-  color: orange; }
-
-.fa-twitter:hover {
-  color: cornflowerblue; }
-
-.fa-code:hover {
-  color: red; }
-
-.fa-linkedin:hover {
-  color: blue; }
-
-.fa-codepen:hover {
-  color: black; }
 
 .fa-backward {
   font-size: 2em;
@@ -343,6 +330,30 @@ textarea:focus {
 .fa-pause:hover {
   font-size: 2em;
   color: tomato; }
+
+.fa-github:hover {
+  color: #f4cbb2; }
+
+.fa-stack-overflow:hover {
+  color: orange; }
+
+.fa-twitter:hover {
+  color: cornflowerblue; }
+
+.fa-code:hover {
+  color: #c12127; }
+
+.fa-linkedin:hover {
+  color: #1884bb; }
+
+.fa-codepen:hover {
+  color: #fcd000; }
+
+.fa-behance:hover {
+  color: #0069ff; }
+
+.fa-file-pdf-o:hover {
+  color: gold; }
 
 @media screen and (max-width: 799px) {
   .me {

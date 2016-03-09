@@ -29,24 +29,6 @@
   color: black;
   margin-bottom: 20px; }
 
-.fa-github:hover {
-  color: green; }
-
-.fa-stack-overflow:hover {
-  color: orange; }
-
-.fa-twitter:hover {
-  color: cornflowerblue; }
-
-.fa-code:hover {
-  color: red; }
-
-.fa-linkedin:hover {
-  color: blue; }
-
-.fa-codepen:hover {
-  color: black; }
-
 .fa-backward {
   font-size: 2em;
   color: black;
@@ -84,5 +66,29 @@
 .fa-pause:hover {
   font-size: 2em;
   color: tomato; }
+
+.fa-github:hover {
+  color: #f4cbb2; }
+
+.fa-stack-overflow:hover {
+  color: orange; }
+
+.fa-twitter:hover {
+  color: cornflowerblue; }
+
+.fa-code:hover {
+  color: #c12127; }
+
+.fa-linkedin:hover {
+  color: #1884bb; }
+
+.fa-codepen:hover {
+  color: #fcd000; }
+
+.fa-behance:hover {
+  color: #0069ff; }
+
+.fa-file-pdf-o:hover {
+  color: gold; }
 
 /*# sourceMappingURL=icons.css.map */

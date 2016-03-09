@@ -29,6 +29,48 @@ For more work and information, please see the entire source code.
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+	
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
+
+<style type="text/css">
+		.os-animation{
+				opacity: 0;
+		}
+		.os-animation.animated{
+				opacity: 1;
+		}
+</style>
+
+<script type="text/javascript">//<![CDATA[
+		$(function(){
+				function onScrollInit( items, trigger ) {
+						items.each( function() {
+						var osElement = $(this),
+								osAnimationClass = osElement.attr('data-os-animation'),
+								osAnimationDelay = osElement.attr('data-os-animation-delay');
+
+								osElement.css({
+										'-webkit-animation-delay':  osAnimationDelay,
+										'-moz-animation-delay':     osAnimationDelay,
+										'animation-delay':          osAnimationDelay
+								});
+								var osTrigger = ( trigger ) ? trigger : osElement;
+
+								osTrigger.waypoint(function() {
+										osElement.addClass('animated').addClass(osAnimationClass);
+										},{
+												triggerOnce: true,
+												offset: '90%'
+								});
+						});
+				}
+				onScrollInit( $('.os-animation') );
+				onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+});//]]>
+</script>
+
 </head>
 <body>
 <% include ./partials/nav %>

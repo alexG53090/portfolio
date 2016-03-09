@@ -1,3 +1,6 @@
+.portfolio-link:hover {
+  background-color: red; }
+
 .navbar-default .navbar-nav > li > a {
   color: black; }
 
@@ -8,8 +11,8 @@
   background-color: #5FCAE8; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: black;
-  background-color: #5FCAE8; }
+  color: white;
+  background-color: black; }
 
 .navbar {
   margin-left: 3%; }

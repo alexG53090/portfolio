@@ -28,12 +28,7 @@
   color:black;
   margin-bottom: 20px;
 }
-.fa-github:hover { color: green;}
-.fa-stack-overflow:hover { color: orange;}
-.fa-twitter:hover { color: cornflowerblue;}
-.fa-code:hover { color: red;}
-.fa-linkedin:hover { color: blue;}
-.fa-codepen:hover { color: black;}
+
 
 //////// Dashboard
 
@@ -76,3 +71,12 @@
   font-size: 2em;
   color: tomato;
 }
+
+.fa-github:hover { color: rgb(244, 203,178);}
+.fa-stack-overflow:hover { color: orange;}
+.fa-twitter:hover { color: cornflowerblue;}
+.fa-code:hover { color: rgb(193,33,39);}
+.fa-linkedin:hover { color: rgb(24,132,187);}
+.fa-codepen:hover { color: rgb(252,208,0);}
+.fa-behance:hover { color: rgb(0,105,255);}
+.fa-file-pdf-o:hover{ color: gold}
