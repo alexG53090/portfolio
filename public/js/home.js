@@ -15,17 +15,17 @@ $(document).ready(function(){
   // getQuote();
   // animateIn();
   navigator();
+  $('.homer').css('background-color', 'rgb(241,233,21)')
 })
-
 
 function navigator(){
   if(window.location.href == 'https://monportfolio.herokuapp.com/' || 'localhost:8080'){
     console.log('you are home')
-  } if (window.location.href == 'https://monportfolio.herokuapp.com/portfolio' || 'localhost:8080/portfolio') {
+  } else if (window.location.href == 'https://monportfolio.herokuapp.com/portfolio' || 'localhost:8080/portfolio') {
     console.log('portfolio page');
-  } if (window.location.href == 'https://monportfolio.herokuapp.com/about' || 'localhost:8080/about') {
+  } else if (window.location.href == 'https://monportfolio.herokuapp.com/about' || 'localhost:8080/about') {
     console.log('about page');
-  } if (window.location.href == 'https://monportfolio.herokuapp.com/contact' || 'localhost:8080/contact') {
+  } else if (window.location.href == 'https://monportfolio.herokuapp.com/contact' || 'localhost:8080/contact') {
     console.log('contact page');
   } else {
     console.log('are you even on the site???');
