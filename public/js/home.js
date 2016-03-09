@@ -125,9 +125,7 @@ function goToGoogle(){
   } if(isFirefox){
     console.log('Firefox');
     document.body.innerHTML = "This website depends on technology that is not supported by FireFox, plase go to google";
-  } if(isSafari){
-    document.body.innerHTML = "go to google";
-  }else {
+  } else {
     console.log('nothing ot report');
   }
 }
