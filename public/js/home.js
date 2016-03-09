@@ -16,9 +16,16 @@ $(document).ready(function(){
   goToGoogle();
 })
 
-$('.replay').on('click', function(){
-  replay();
-})
+function hideElements(){
+  $('.triangle').hide();
+  $('.square').hide();
+  $('.circle').hide();
+  $('.about').hide();
+  $('.greeting').hide();
+  $('.know').hide();
+  $('.touch').hide();
+  $('.replay').hide();
+}
 
 function dashBoard(){
   $('.pause').on('click', function() {
@@ -29,17 +36,9 @@ function dashBoard(){
     $('.slickslide')
     .slick('slickPlay')
   });
-}
-
-function hideElements(){
-  $('.triangle').hide();
-  $('.square').hide();
-  $('.circle').hide();
-  $('.about').hide();
-  $('.greeting').hide();
-  $('.know').hide();
-  $('.touch').hide();
-  $('.replay').hide();
+  $('.replay').on('click', function(){
+    replay();
+  });
 }
 
 function playSlides(){
@@ -81,46 +80,6 @@ function playSlides(){
   });
 }
 
-function animateIn(){
-  $(window).on("load",function() {
-      function fade() {
-        var itemsToAnimate = [];
-        var me = $('.me'), icons = $('.icons'), colophon = $('.colophon'), see = $('.see'), resumeTitle = $('.resume-title'), resume = $('.resume');
-        itemsToAnimate.push(me, icons, see, resumeTitle, resume);
-        itemsToAnimate.forEach(function(index) {
-            var objectBottom = $(index).offset().top + $(index).outerHeight();
-            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-            if (objectBottom < windowBottom - 100) { //object comes into view (scrolling down)
-              if ($(index).css('opacity')==0) {
-                $(index).fadeTo(1000,1);
-              }
-            } else {
-              if ($(index).css('opacity')==1) {
-                $(index).fadeTo(1000,0);
-              }
-            }
-        });
-      }
-      fade(); //Fade in completely visible elements during page-load
-      $(window).scroll(function() {fade();}); //Fade in elements during scroll
-  });
-}
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
-
 function replay(){
   $('.know').hide();
   $('.touch').hide();
@@ -161,7 +120,6 @@ function goToGoogle(){
   var isEdge = !isIE && !!window.StyleMedia;
   var isChrome = !!window.chrome && !!window.chrome.webstore;
   var isBlink = (isChrome || isOpera) && !!window.CSS;
-
   if(isChrome){
     console.log('THIS IS CHROME');
   } if(isFirefox){
