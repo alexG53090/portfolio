@@ -28,7 +28,6 @@ For more work and information, please see the entire source code.
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
-
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" />
@@ -46,10 +45,18 @@ For more work and information, please see the entire source code.
 			<h2>A collection of projects</h2>
 			<p>Made from<br />
 			2012-2016</p>
+			<!-- <button class="make-carousel">Turn this page into a carousel</button> -->
 		</div>
 	</header>
-	<hr>
+	<hr/>
 	<% include ./partials/portfolioParts %>
+	<div class="dash-wrap">
+		<div class="dashboard">
+			<div class="play"><i class="fa fa-play"></i></div>
+			<div class="pause"><i class="fa fa-pause"></i></div>
+		</div>
+		<p class='project-nav'>Navigate Projects</p>
+	</div>
 	<hr>
 	<footer>
 		<% include ./partials/nav %>

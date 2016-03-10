@@ -497,6 +497,9 @@ textarea:focus {
   color: white;
   padding: 2em; }
 
+.project {
+  text-align: center; }
+
 @media screen and (max-width: 799px) {
   .me {
     width: 100%; }

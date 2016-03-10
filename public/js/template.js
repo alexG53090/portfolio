@@ -1,7 +1,13 @@
 $(document).ready(function(){
+  $('.dash-wrap').hide();
   animateLogo();
   playSlides();
   navigator();
+  $('.make-carousel').on('click', function(){
+    makeCarousel();
+    $('.slick-list').css('height', '1200')
+    $('.dash-wrap').show();
+  })
 })
 
 function animateLogo(){
@@ -55,6 +61,46 @@ function playSlides(){
       }]
   });
 }
+
+function makeCarousel(){
+  $('.slickslide').slick({
+    autoplay: false,
+    swipe: true,
+    swipeToSlide: true,
+    touchMove: true,
+    arrows:true,
+    appendArrows: $(".dashboard"),
+    asNavFor: null,
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa fa-backward"></i></button>',
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa fa-forward"></i></button>',
+    responsive: [{
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 1,
+          infinite: true
+        }
+      },
+      {
+          breakpoint: 1500,
+          settings: {
+            slidesToShow: 1,
+            infinite: true
+          }
+        },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: false
+        }
+      },
+       {
+        breakpoint: 300,
+        settings: "unslick"
+      }]
+  });
+}
+
 
 (function () {
   $(document).ready(function () {
