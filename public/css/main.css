@@ -436,6 +436,33 @@ textarea:focus {
   color: cornflowerblue;
   cursor: pointer; }
 
+.my-stack {
+  text-align: center;
+  height: 100%;
+  padding: 2%;
+  background-color: #f9f9f9;
+  width: 90%;
+  margin: auto; }
+
+.tech-icon {
+  height: 4%;
+  width: 4%;
+  margin: auto; }
+
+.tech-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.tech-icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
 @-webkit-keyframes loading {
   0% {
     width: 0%; }
