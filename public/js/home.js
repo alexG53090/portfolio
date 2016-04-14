@@ -125,7 +125,7 @@ function goToGoogle(){
     console.log('THIS IS CHROME');
   } if(isFirefox){
     console.log('Firefox');
-    document.body.innerHTML = "This website depends on technology that is not supported by FireFox, please open this website in Google Chrome";
+    document.body.innerHTML = "This website depends on technology that is not supported by FireFox, please open this website in Google Chrome or Safari";
   } else {
     console.log('nothing ot report');
   }
