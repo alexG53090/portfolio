@@ -1,20 +1,20 @@
 $(window).load(function() {
-  hideElements();
- // $('#overlay').addClass('hide');
+  // hideElements();
+ $('#overlay').addClass('hide');
 });
 
 $(document).ready(function(){
-  // $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  //  function(e) {
-  //    $('#loadingscreen').fadeOut(500);
-  //   //  $('#loadingscreen').remove();
-  //  });
-  // hideElements();
+  $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+   function(e) {
+     $('#loadingscreen').fadeOut(500);
+    //  $('#loadingscreen').remove();
+   });
+  hideElements();
   playSlides();
   replay();
   dashBoard();
   $('.homer').css('background-color', 'rgb(241,233,21)')
-  // goToGoogle();
+  goToGoogle();
 })
 
 function hideElements(){
