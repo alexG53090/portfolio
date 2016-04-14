@@ -1,14 +1,15 @@
 $(window).load(function() {
- $('#overlay').addClass('hide');
+  hideElements();
+ // $('#overlay').addClass('hide');
 });
 
 $(document).ready(function(){
-  $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-   function(e) {
-     $('#loadingscreen').fadeOut(500);
-    //  $('#loadingscreen').remove();
-   });
-  hideElements();
+  // $('#loading').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+  //  function(e) {
+  //    $('#loadingscreen').fadeOut(500);
+  //   //  $('#loadingscreen').remove();
+  //  });
+  // hideElements();
   playSlides();
   replay();
   dashBoard();
