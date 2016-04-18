@@ -133,5 +133,18 @@ height:25%;
 .main-container {
 background: #e7e7e7;
 position: relative;
+}
 
+.das-work {
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+}
+
+h2 {
+  letter-spacing: 2.5px;
+}
+
+a:visited {
+    color: black;
 }
