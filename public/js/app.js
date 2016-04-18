@@ -22,31 +22,53 @@ var parallaxScene = new ScrollScene({
 .addTo(controller);
 
 var flyRight = new TimelineMax().add([
-  TweenMax.from(".das-work", 1, {ease:Power1.easeOut, y: '-75px'}),
+  // TweenMax.from(".das-work", 1, {ease:Power1.easeOut, y: '-75px'}),
   TweenMax.to('.dash-wrap', 1, {width: "800px"})
 ])
 
 var project = new ScrollScene({
   triggerElement: '.projectos',
-  duration: 300
+  duration: 200
 })
 .setTween(flyRight)
 .addTo(controller);
 
 var me = new TimelineMax().add([
-  TweenMax.to('.about-me', 1, {y: '-100px'}),
-  TweenMax.to('.my-face', 1, {y: '-80px'}),
-  TweenMax.to('.me', 1, {y: '-80px'}),
+  TweenMax.to('.my-face', 1, {rotationY: 360}),
 
-  // TweenMax.from('.my-face', 1, {y: '-80px'}),
-  // TweenMax.from('.me', 1, {y: '-80px'}),
+  // TweenMax.to('.me', 1, {fontSize: "2em"})
+
 ])
 
 var about = new ScrollScene({
   triggerElement: '.my-face',
-  duration: 700
+  duration: 300
 })
 .setTween(me)
+.addTo(controller);
+
+var techIcon = new TimelineMax().add([
+  TweenMax.staggerTo('.my-stack', 1, {boxShadow:"0px 0px 50px 1px rgba(0,0,0,0.75)", y: '-20px', ease:Quad.easeInOut})
+])
+
+var techIcons = new ScrollScene({
+  triggerElement: '.my-stack',
+  duration:200
+})
+.setTween(techIcon)
+.addTo(controller);
+
+var around = new TimelineMax().add([
+  // TweenMax.to('.contact', 100, {backgroundColor:"rgba(0,0,0,0.75);"}),
+  TweenMax.staggerTo('.icon', 100, {rotation: 360, ease:Quad.easeInOut}),
+  TweenMax.to('.contact', 100, {boxShadow:" inset 0px 0px 50px 1px rgba(255,255,255,1);"})
+])
+
+var aroundWeb = new ScrollScene({
+  triggerElement: '.contact',
+  duration:400
+})
+.setTween(around)
 .addTo(controller);
 
 $(document).ready(function() {
