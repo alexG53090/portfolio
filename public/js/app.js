@@ -29,7 +29,7 @@ var flyRight = new TimelineMax().add([
 
 var project = new ScrollScene({
   triggerElement: '.projectos',
-  duration: 500
+  duration: 400
 })
 .setTween(flyRight)
 .addTo(controller);
