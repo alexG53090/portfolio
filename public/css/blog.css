@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.demo {
+  height: 100vh; }
+
+.demo.one {
+  background: #efefef; }
+
+.demo.two {
+  background: #e1e1e1; }
+
+.demo.three {
+  background: #efefef; }
+
+.box2 {
+  padding-bottom: 20px;
+  color: #fff;
+  width: 30%;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.box2 p {
+  margin: 0;
+  padding: 0; }
+
+#pin0 {
+  margin: 0 0 0 auto; }
+
+#pin1 {
+  margin: 0 auto 0 0; }
+
+#pin2 {
+  margin: 0 auto; }
+
+/*# sourceMappingURL=blog.css.map */

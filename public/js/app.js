@@ -13,7 +13,6 @@ var parallax = new TimelineMax().add([
   TweenMax.to(".dash-wrap", 20, {ease:Power1.easeOut})
 ]);
 
-
 var parallaxScene = new ScrollScene({
   triggerElement: '.projects',
   duration: 700
