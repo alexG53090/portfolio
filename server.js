@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var knex = require('knex')({
   client: 'pg',
-	// connection: 'postgres://localhost/portfolio'
   connection: 'postgres://yetpmeohcsomtg:Hnx270n32fWXXOYKScGvbTRt_i@ec2-54-221-201-165.compute-1.amazonaws.com:5432/d30t2g1brgvttb?ssl=true'
 });
 
@@ -21,10 +20,9 @@ app.set('view engine', 'ejs');
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
-// set the home page route
 app.get('/', function(req, res) {
 	res.render('index');
-});
+})
 
 app.get('/about', function(req, res, next){
   res.render('about');
@@ -32,10 +30,14 @@ app.get('/about', function(req, res, next){
 
 app.get('/portfolio', function(req, res) {
 	res.render('portfolio');
-});
+})
 
 app.get('/contact', function(req, res, next){
   res.render('contact')
+})
+
+app.get('/blog', function(req, res) {
+	res.render('blog');
 })
 
 app.get('/thankyou', function(req, res, next){
@@ -44,7 +46,7 @@ app.get('/thankyou', function(req, res, next){
 
 app.get('/flybuy', function(req, res) {
 	res.render('flybuy');
-});
+})
 
 app.post('/sendmessage', function(req, res, next){
 	var username = req.body.name;
