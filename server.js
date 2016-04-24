@@ -4,11 +4,12 @@ var app = express();
 var port = process.env.PORT || 8080;
 var bodyParser = require('body-parser');
 var cors = require('cors');
+var favicon = require('serve-favicon')
 var knex = require('knex')({
   client: 'pg',
   connection: 'postgres://yetpmeohcsomtg:Hnx270n32fWXXOYKScGvbTRt_i@ec2-54-221-201-165.compute-1.amazonaws.com:5432/d30t2g1brgvttb?ssl=true'
 });
-
+app.use(favicon(__dirname + '/public/favicon.png'));
 app.use(express.static('./views'));
 app.use(cors());
 app.use(bodyParser.json());

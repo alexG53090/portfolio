@@ -1,37 +1,72 @@
 body {
   margin: 0;
   padding: 0;
+  color:black
 }
-.demo {
-  height: 100vh;
+.post {
+  height: 200vh;
+  width:90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
-.demo.one{
+.post.one{
   background: #efefef;
 }
-.demo.two{
+.post.two{
   background: #e1e1e1;
 }
-.demo.three {
+.post.three {
   background: #efefef;
 }
-.box2{
-  padding-bottom: 20px;
-  color: #fff;
-  width: 30%;
-  padding: 0;
-  text-align: center;
-  font-size: 1.5rem;
+
+.left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-.box2 p{
-  margin: 0;
-  padding: 0;
+
+.right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
+
 #pin0 {
-  margin: 0 0 0 auto;
+  margin: auto;
+  width: 90%;
 }
 #pin1 {
-  margin: 0 auto 0 0;
+  margin: auto;
+  width: 90%;
 }
 #pin2 {
   margin: 0 auto;
+  width: 90%;
+}
+#pin3 {
+  margin: 0 auto;
+  width: 90%;
+
+}
+
+.blog-nav {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: row ;
+  .blog-posts {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+    height:20px;
+    .post-link {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
 }

@@ -16,7 +16,9 @@ li a { background-color: transparent; color:black; }
 p { font-size: 1.5em; text-align: center; }
 
 
-h2 { font-family: 'Oswald', sans-serif; letter-spacing: 2 px; }
+h1 { font-family: 'Oswald', sans-serif; }
+h2 { font-family: 'Oswald', sans-serif; }
+
 
 header {
   text-align: center;
