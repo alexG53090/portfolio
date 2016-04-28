@@ -1,0 +1,34 @@
+.portfolio-link:hover {
+  background-color: red;
+
+}
+.about-link:hover {
+
+}
+.contact-link:hover {
+
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+  transition: .2s, background-color, color, ease;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: black;
+}
+
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: #5FCAE8;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+    background-color: black;
+}
+
+//
+.navbar {
+  margin-left: 3%;
+}

@@ -1,0 +1,82 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  /*background-color: #f9f9f9;*/
+  background-color: transparent;
+  margin: auto;
+  align-items: center;
+  padding: 5%;
+}
+.icon {
+  margin: auto;
+  width: 10%;
+  text-align: center;
+}
+.icons .icon p {
+  text-align: center;
+}
+.about-section {
+  text-align: center;
+  background: linear-gradient(to right, rgb(94,200,230), rgb(241,233,21),rgb(240,87,90)); /* Standard syntax */
+  width:90%;
+  margin:auto;
+}
+.fa {
+  font-size: 4em;
+  color:black;
+  margin-bottom: 20px;
+}
+
+
+//////// Dashboard
+
+.fa-backward {
+  font-size: 2em;
+  color: white;
+  margin-right: 50px;
+}
+.fa-forward {
+  font-size:2em;
+  color: white;
+  margin-left: 50px;
+}
+.fa-play {
+  font-size: 2em;
+  color: white;
+  margin-right: 50px;
+}
+.fa-pause {
+  font-size: 2em;
+  color: white;
+}
+
+.fa-backward:hover {
+  font-size: 2em;
+  color: rgb(95, 202, 232);
+  margin-right: 50px;
+}
+.fa-forward:hover {
+  font-size:2em;
+  color: rgb(95, 202, 232);
+  margin-left: 50px;
+}
+.fa-play:hover {
+  font-size: 2em;
+  color: rgb(241,233,21);
+  margin-right: 50px;
+}
+.fa-pause:hover {
+  font-size: 2em;
+  color: tomato;
+}
+
+.fa-github:hover { color: rgb(244, 203,178);}
+.fa-stack-overflow:hover { color: orange;}
+.fa-twitter:hover { color: cornflowerblue;}
+.fa-code:hover { color: rgb(193,33,39);}
+.fa-linkedin:hover { color: rgb(24,132,187);}
+.fa-codepen:hover { color: rgb(252,208,0);}
+.fa-behance:hover { color: rgb(0,105,255);}
+.fa-file-pdf-o:hover{ color: gold}

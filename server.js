@@ -20,6 +20,7 @@ app.set('view engine', 'ejs');
 
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
+// change this to dist, when the images start working and are linked up
 
 app.get('/', function(req, res) {
 	res.render('index');
