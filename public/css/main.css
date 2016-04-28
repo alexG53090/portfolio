@@ -537,7 +537,7 @@ textarea:focus {
     margin-bottom: 20px; }
 
   p {
-    font-size: 2em; }
+    font-size: 1em; }
 
   .description-wrapper {
     display: flex;
@@ -612,14 +612,24 @@ textarea:focus {
 
   .description-wrapper {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  p {
+    font-size: 1em; } }
 @media screen and (min-width: 1000px) {
   .me {
-    width: 100%; } }
+    width: 100%;
+    font-size: 1.25em; } }
 @media screen and (min-width: 1200px) {
   .me {
-    width: 80%; } }
+    width: 80%; }
+
+  p {
+    font-size: 1em; } }
 a {
   text-decoration: underline; }
+
+a:visited {
+  color: cornflowerblue; }
 
 /*# sourceMappingURL=main.css.map */

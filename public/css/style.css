@@ -111,9 +111,10 @@ height:25%;
   /*border-radius: 40%;*/
 }
 
-.me::first-letter {
+.me:first-letter {
   margin-left: 5%;
   font-size: 1.5em;
+  line-height: 1.25em;
 }
 
 
@@ -147,9 +148,6 @@ h2 {
   letter-spacing: 2.5px;
 }
 
-a:visited {
-    color: black;
-}
 
 .my-stack {
 }

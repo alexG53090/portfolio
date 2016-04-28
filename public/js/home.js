@@ -89,19 +89,17 @@ function replay(){
     $('.square').fadeIn(200, function(){
       $('.circle').fadeIn(200, function(){
         $('.triangle').fadeIn(200, function(){
-          $('.portfolio-link').css( "text-decoration", "underline" );
+          $('.portfolio-link').css( "text-decoration", "overline" );
           $('.about').fadeIn('slow', function(){
             $(this).fadeOut(900, function(){
-              $('.portfolio-link').css( "text-decoration", "none" );
-              $('.about-link').css( "text-decoration", "underline" );
+              $('.portfolio-link').css( "text-decoration", "underline" );
+              $('.about-link').css( "text-decoration", "overline" );
                 $('.know').fadeIn(900, function(){
-                  $('.about-link').css( "text-decoration", "none" );
+                  $('.about-link').css( "text-decoration", "underline" );
                     $(this).fadeOut(750, function(){
+                    $('.contact-link').css( "text-decoration", "overline" );
                     $('.contact-link').css( "text-decoration", "underline" );
-                    $('.touch').fadeIn(900, function(){
-                    $('.replay').fadeIn(900);
-                    $('.contact-link').css( "text-decoration", "none");
-                    $('.fa-angle').css('color', 'red');
+                    $('.touch').fadeIn(900);
                   });
                 });
               });
@@ -110,7 +108,6 @@ function replay(){
         });
       });
     });
-  });
 }
 
 function goToGoogle(){
@@ -122,11 +119,10 @@ function goToGoogle(){
   var isChrome = !!window.chrome && !!window.chrome.webstore;
   var isBlink = (isChrome || isOpera) && !!window.CSS;
   if(isChrome){
-    console.log('THIS IS CHROME');
+    return true
   } if(isFirefox){
-    console.log('Firefox');
     document.body.innerHTML = "This website depends on technology that is not supported by FireFox, please open this website in Google Chrome or Safari";
   } else {
-    console.log('nothing ot report');
+    return
   }
 }
