@@ -10,7 +10,7 @@ var knex = require('knex')({
   connection: 'postgres://yetpmeohcsomtg:Hnx270n32fWXXOYKScGvbTRt_i@ec2-54-221-201-165.compute-1.amazonaws.com:5432/d30t2g1brgvttb?ssl=true'
 });
 app.use(favicon(__dirname + '/public/favicon.png'));
-app.use(express.static('./views'));
+app.use(express.static(__dirname + '/views'));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -59,7 +59,7 @@ app.post('/sendmessage', function(req, res, next){
       username: username,
       message: message
     }).then(function(){
-      console.log('added ' + username + ' to db');
+      console.log('added message from: ' + username + ' to db');
     })
   }
   res.redirect('thankyou')
